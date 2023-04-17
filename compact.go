@@ -3,7 +3,6 @@ package shares
 const CompactVersion uint8 = 1
 
 type compactSchema struct {
-	
 }
 
 func Compact() Schema {
@@ -17,6 +16,10 @@ func V1() Schema {
 func (s *compactSchema) Version() uint8 { return CompactVersion }
 
 func (s *compactSchema) Read([]Share) ([][]byte, []byte, error) {
+	panic("not implemented")
+}
+
+func (s *compactSchema) Namespace(Share) []byte {
 	panic("not implemented")
 }
 

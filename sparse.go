@@ -19,6 +19,10 @@ func (s *sparseSchema) Read([]Share) ([][]byte, []byte, error) {
 	panic("not implemented")
 }
 
+func (s *sparseSchema) Namespace(share Share) []byte {
+	panic("not implemented")
+}
+
 func (s *sparseSchema) Write(namespace []byte, data [][]byte) ([]Share, error) {
 	panic("not implemented")
 }

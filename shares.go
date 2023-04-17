@@ -18,6 +18,9 @@ type Reader interface {
 	// Read takes a set of shares belonging to the same namespace and returns
 	// the original data, the namespace and an error if the shares are invalid.
 	Read([]Share) ([][]byte, []byte, error)
+
+	// Namespae returns the namespace of that share
+	Namespace(Share) []byte
 }
 
 // Writer interface for writing data to a set of shares.
